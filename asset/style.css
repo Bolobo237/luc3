@@ -1,0 +1,116 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --softmagenta: hsl(300, 69%, 71%);
+
+    --text-base:16px;
+
+    --font-regular:400;
+    --font-semibold:600;
+
+    --font-family:"Poppins" sans-serif;
+}
+
+body {
+    font-size: var(--text-base);
+    font-family: sans-serif;
+    font-weight: var(--font-regular);
+}
+
+main {
+    background-color: var(--violet);
+    background-image:url("images/bg-mobile.svg") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: fixed;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 200px;
+    padding: 2.5rem;
+}
+
+.sect {
+    width: 400px;
+    margin-bottom: 1rem; 
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+h1 {
+    color: white;
+    font-weight: var(--font-semibold);
+    text-align: center;
+    padding:2rem 5rem 0;
+    font-size: 29px;
+    line-height: 1.5;
+}
+
+p {
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    line-height: 1.5;
+}
+
+button {
+    margin: 1rem 9rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 75px;
+    padding-right: 75px;
+    border-radius: 30px;
+    color: var(--violet);
+    border-color: var(--violet);
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0 0, 1) ;
+}
+
+@media screen and (min-width:800px) {
+    main {
+        background-image:url("images/bg-desktop.svg") ;
+    }
+
+    .logo {
+        width: 300px;
+        padding-left: 5rem;
+    
+    }
+
+    .sect {
+        width: 750px;
+        padding-left: 50px;
+    }
+
+    #top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h1 {
+        width: 70%;
+        text-align: left;
+        margin-left: 17px;
+    }
+
+    p {
+        width: 90%;
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    button {
+        margin-left: 88px;
+    }
+}
+
